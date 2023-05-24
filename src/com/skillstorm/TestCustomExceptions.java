@@ -35,11 +35,22 @@ public class TestCustomExceptions {
 		} catch (Exception e) {
 			System.out.println(e);
 		}
+		try {
+			doStuff();
+		} catch (TonysException e) {
+			System.out.println(e);
+		}
+		
 
 	}
 
-	public static void doStuff() throws EricasException, DaunsException {
+
+	
+
+	public static void doStuff() throws EricasException, DaunsException,TonysException {
+
 	}
+	
 
 	// Erica's code
 	class EricasException extends Exception {
@@ -69,4 +80,7 @@ public class TestCustomExceptions {
 	}
 
 class BlakesException3 extends BlakesException{}
+
+
+	class TonysException extends Exception {}
 }
