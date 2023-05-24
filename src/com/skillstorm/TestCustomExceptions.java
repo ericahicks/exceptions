@@ -9,6 +9,8 @@ public class TestCustomExceptions {
 		// Step 2: Add a catch clause (and any other code your need)
 		try {
 			doStuff();
+		} catch (KsenasCustomException e) {
+			System.out.println(e);
 		} catch (EricasException2 e) {
 			System.out.println(e);
 		} catch (EricasException3 e) {
@@ -18,13 +20,14 @@ public class TestCustomExceptions {
 		} catch (Exception e) {
 			System.out.println(e);
 		}
-		
-
 	}
+
 	
 	public static void doStuff() throws EricasException {
 		
 	}
+	
+
 
 }
 
@@ -34,3 +37,8 @@ class EricasException2 extends EricasException {}
 class EricasException3 extends EricasException {}
 
 // Blake's code
+
+
+// Ksena's code
+class KsenasCustomException extends EricasException2 {}
+
