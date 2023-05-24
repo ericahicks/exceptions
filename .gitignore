@@ -1,1 +1,7 @@
 .class
+bin\
+
+bin/com/skillstorm/EricasException.class
+bin/com/skillstorm/EricasException2.class
+bin/com/skillstorm/EricasException3.class
+bin/com/skillstorm/TestCustomExceptions.class
